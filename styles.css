@@ -1,0 +1,84 @@
+body{
+    background: rgb(137,147,255);
+    background: linear-gradient(90deg, rgba(137,147,255,0.9444911753764006) 26%, rgba(129,79,236,0.8632586823792017) 35%, rgba(129,79,236,0.9416900549282213) 49%, rgba(189,148,255,1) 100%); 
+}
+
+/* .circle{
+    height: 400px;
+    width: 400px;
+    border: solid black 20px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20vh;
+  } */
+
+  /* .center{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    border: 5px solid black;
+    background-color: black;
+  } */
+.hand{
+    position: absolute;
+    width: 10px;
+    /* background-color: black; */
+    /* border: 0.5rem solid rgba(0, 9, 108, 0.189); */
+    background-color: rgba(120, 11, 11, 0.548);
+    right: 49.7%;
+    transform-origin: bottom center;
+}
+
+.sec{
+    height: 150px;
+    top: 28%;
+    /* transform: rotate(360deg); */
+    /* display: none; */
+  }
+.min{
+    height: 150px;
+    top: 28%;
+    /* transform: rotate(22deg); */
+    /* display: none; */
+}
+.hr{
+    height: 100px;
+    top: 34.5%;
+    /* transform: rotate(90deg); */
+    /* display: none; */
+}
+
+.twelve{
+    position: absolute;
+    right: 50%;
+    top: 10%
+}
+
+.three{
+    position: absolute;
+    right: 35%;
+    top: 45%;
+}
+
+.six{
+    position: absolute;
+    right: 50%;
+    top: 75%;
+}
+
+.nine{
+    position: absolute;
+    left: 35%;
+    top: 45%;
+}
+
+h1{
+    color: rgb(6, 5, 5);
+    font-family: 'Rubik', sans-serif;
+font-family: 'Sigmar', cursive;
+font-family: 'UnifrakturCook', cursive;
+}

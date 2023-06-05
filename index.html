@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&family=Sigmar&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="circle">
+            <div class="center">
+                <div class="sec hand" id="sec-hand"></div>
+                <div class="min hand" id="min-hand"></div>
+                <div class="hr hand" id="hr-hand"></div>
+                <div class="twelve"><h1>12</h1></div>
+                <div class="six"><h1>6</h1></div>
+                <div class="three"><h1>3</h1></div>
+                <div class="nine"><h1>9</h1></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function  motion(){
+            // getting seconds, minutes and hours
+            const now = new Date();
+            const sec = now.getSeconds();
+            const minutes = now.getMinutes();
+            const hr = now.getHours();
+
+            // seconds
+            const secHand = document.getElementById("sec-hand");
+            const secDeg = (sec/60)*360;
+            secHand.style.transform = `rotate(${secDeg}deg)`;
+
+            //minutes
+
+            const minHand = document.getElementById("min-hand");
+            const minDeg = (minutes/60)*360;
+            minHand.style.transform = `rotate(${minDeg}deg)`;
+
+            //hours
+
+            const hrHand = document.getElementById("hr-hand");
+            const hrDeg = (hr/12)*360;
+            hrHand.style.transform = `rotate(${hrDeg}deg)`;
+
+        }
+
+        setInterval(motion, 1000)
+    </script>
+</body>
+</html>
